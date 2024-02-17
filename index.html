@@ -17,15 +17,15 @@
         rel="stylesheet">
     <!-- shared styles -->
     <style>
-        raleway-font {
+        .raleway-font {
             font-family: "Raleway", sans-serif;
         }
 
-        inter-font {
+        .inter-font {
             font-family: "Inter", sans-serif;
         }
 
-        roboto-font {
+        .roboto-font {
             font-family: "Roboto", sans-serif;
         }
     </style>
@@ -33,8 +33,24 @@
     <title>Smart Ticketing</title>
 </head>
 
-<body>
+<body class="m-0 p-0">
     <header>
+        <!-- SUCCESS message after booking -->
+        <section class="bg-[#F2F1F1] h-svh flex items-center">
+            <div id="SUCCESS"
+                class=" my-0 mx-auto p-4 lg:w-2/4 lg:p-14 bg-[#FFF] flex flex-col items-center text-center gap-4 rounded-lg">
+                <div><img src="./images/success.png" alt=""></div>
+                <h1 class="text-[#27AE60] text-2xl font-bold roboto-font">SUCCESS</h1>
+                <h2 class="w-auto roboto-font text-xl font-medium text-[#4A4A4A]">
+                    Thank you for Booking Our Bus Seats.
+                    We are working hard to find the best service and deals for you.
+                </h2>
+                <h3 class="w-auto roboto-font font-light text-xl">Shortly you will find a confirmation in your email.
+                </h3>
+                <button
+                    class="btn btn-success text-white roboto-font text-xl font-semibold rounded-l-full rounded-r-full px-12 lg:px-24">Continue</button>
+            </div>
+        </section>
 
     </header>
     <main>
