@@ -51,7 +51,7 @@
         </div>
     </section>
     <!-- SUCCESS message end -->
-    <header id="hdr" class="hidden">
+    <header id="hdr" class="">
         <!-- navbar start -->
         <section class=" max-w-[1171px] my-0 mx-auto mt-2 lg:mt-12">
             <div class="navbar bg-base-100 ">
@@ -133,7 +133,7 @@
     </header>
     <main>
         <!-- best offer start -->
-        <section class="hidden max-w-[1171px] px-4 lg:px-0 mx-auto my-2 lg:my-12">
+        <section class=" max-w-[1171px] px-4 lg:px-0 mx-auto my-2 lg:my-12">
             <div class="flex flex-col gap-5 lg:gap-10 ">
                 <div>
                     <h2 class="raleway-font text-4xl font-bold text-center">Best offers for you
@@ -175,7 +175,7 @@
         <!-- best offer end -->
         <!-- Paribahan start -->
         <section class=" bg-[#F7F8F8] mt-8 lg:mt-16 pt-2 lg:pt-4 border-t-2 rounded-t-3xl border-green-400">
-            <div class="hidden max-w-[1171px] px-4 lg:px-0 mx-auto my-2 lg:my-12 flex flex-col items-center ">
+            <div class=" max-w-[1171px] px-4 lg:px-0 mx-auto my-2 lg:my-12 flex flex-col items-center ">
                 <div class="text-center lg:w-3/4 max-w[737px] lg:space-y-2">
                     <h1 class="text-black raleway-font text-2xl lg:text-4xl font-bold">P.H Paribahan</h1>
                     <p class="text-black inter-font lg:text-xl font-normal">Yes, you can run unit tests and view the
@@ -202,28 +202,60 @@
             <!-- route start -->
             <div
                 class="max-w-[1171px] px-4 lg:px-0 mx-auto my-2 lg:my-12 bg-white lg:flex lg:items-center lg:justify-center">
-                <div class="bg-[#F7F8F8] lg:w-4/6">
-                    <div class=" flex justify-between p-2 lg:p-4">
-                        <div class="lg:flex ">
+                <div class="bg-[#F7F8F8] lg:w-4/6 p-2 lg:p-4">
+                    <div class=" flex justify-between flex-col-reverse lg:flex-row p-2 lg:p-4 gap-4">
+                        <div class="lg:flex gap-4 flex flex-col-reverse lg:flex-row text-center items-center">
                             <div class=""><img src="./images/bus-logo.png" alt=""></div>
                             <div>
-                                <h2>Greenline Paribahan</h2>
-                                <p>Coach-009-WEB ! Ac-Business</p>
+                                <h2 class="raleway-font text-xl lg:text-3xl text-[#030712] font-bold">Greenline
+                                    Paribahan</h2>
+                                <p class="inter-font text-[#03071299] lg:text-xl font-normal">Coach-009-WEB !
+                                    Ac-Business
+                                </p>
                             </div>
                         </div>
-                        <div>
-                            <button class="btn bg-green-200"><img src="./images/seat-green.png"
-                                    alt=""><span>40</span><span>Seats left</span></button>
+                        <div class="flex flex-col lg:flex-row">
+                            <button class="btn btn-sm lg:btn-md border-none bg-[#1DD10026]"><img
+                                    src="./images/seat-green.png" alt="">
+                                <span class="inter-font text-[#1DD100] text-xl font-medium">40</span>
+                                <span class="inter-font text-[#1DD100] text-xl font-medium">Seats left</span></button>
                         </div>
                     </div>
-                    <div></div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between">
+                            <span class="raleway-font text-[#03071299] text-xl font-semibold">Route</span>
+                            <span class="raleway-font text-[#030712] text-xl font-semibold">Dhaka-Sylhet</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="raleway-font text-[#03071299] text-xl font-semibold">Departure Time</span>
+                            <span class="raleway-font text-[#030712] text-xl font-semibold">9:00 PM</span>
+                        </div>
+                        <div class="flex lg:justify-between flex-wrap space-y-4 lg:space-y-0  justify-center">
+                            <button
+                                class="btn bg-gray-200 border-none inter-font text-[#030712CC] text-base font-medium">Boarding
+                                Point - Laximpur</button>
+                            <button
+                                class="btn bg-gray-200 border-none inter-font text-[#030712CC] text-base font-medium">Dropping
+                                Point - Bogura</button>
+                            <button
+                                class="btn bg-gray-200 border-none inter-font text-[#030712CC] text-base font-medium">Est.
+                                Time - 11 Hour</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="hidden lg:flex"><img src="./images/info-devider.png" alt=""></div>
-                <div><img src="./images/fare.png" alt="">
-                    <h2>550 Taka</h2>
-                    <p>
-                        Per Seat
-                    </p>
+                <div class="flex lg:flex-col text-center items-center gap-2 lg:gap-4">
+                    <div><img src="./images/fare.png" alt="">
+                    </div>
+                    <div class="flex flex-row lg:flex-col gap-2">
+                        <h2>
+                            <span class="text-[#030712] raleway-font text-3xl font-bold">550</span>
+                            <span class="text-[#030712] raleway-font text-3xl font-bold">Taka</span>
+                        </h2>
+                        <p class="text-[#03071296] raleway-font text-2xl font-semibold">
+                            Per Seat
+                        </p>
+                    </div>
                 </div>
             </div>
             <!-- route end -->
