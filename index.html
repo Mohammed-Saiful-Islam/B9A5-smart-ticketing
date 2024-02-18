@@ -35,9 +35,9 @@
 
 <body class="m-0 p-0">
     <header>
-        <!-- SUCCESS message after booking -->
-        <section class="bg-[#F2F1F1] h-svh flex items-center">
-            <div id="SUCCESS"
+        <!-- SUCCESS message start -->
+        <section id="success" class="hidden bg-[#F2F1F1] h-svh flex items-center">
+            <div
                 class=" my-0 mx-auto p-4 lg:w-2/4 lg:p-14 bg-[#FFF] flex flex-col items-center text-center gap-4 rounded-lg">
                 <div><img src="./images/success.png" alt=""></div>
                 <h1 class="text-[#27AE60] text-2xl font-bold roboto-font">SUCCESS</h1>
@@ -49,6 +49,44 @@
                 </h3>
                 <button
                     class="btn btn-success text-white roboto-font text-xl font-semibold rounded-l-full rounded-r-full px-12 lg:px-24">Continue</button>
+            </div>
+        </section>
+        <!-- SUCCESS message end -->
+        <!-- navbar start -->
+        <section class="max-w-[1171px] my-0 mx-auto mt-2 lg:mt-12">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Distination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="raleway-font lg:text-4xl font-extrabold">P-Ticket</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 raleway-font lg:text-xl font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Distination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        class="btn btn-sm lg:btn-md bg-[#1DD1001A] bor border-[#1DD10066] lg:px-7 raleway-font lg:text-xl font-bold text-[#1DD100]">Bus<img
+                            src="./images/bus-icon.png" alt=""></a>
+                </div>
             </div>
         </section>
 
