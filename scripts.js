@@ -1,4 +1,5 @@
 const allSeat = document.getElementsByClassName('seat');
+
 for (const seat of allSeat) {
     seat.addEventListener('click', function () {
 
@@ -17,6 +18,8 @@ for (const seat of allSeat) {
         const availableSeat = parseInt(available.innerText) - count;
         const selectedSeat = parseInt(selected.innerText) + count;
         const finalSeat = parseInt(seat.innerText) + count;
+
+
 
         available.innerText = availableSeat;
         selected.innerText = selectedSeat;
@@ -61,6 +64,9 @@ for (const seat of allSeat) {
                 const discount20 = totalPrice * 0.2;
                 const grandTotal = totalPrice - discount20;
                 grand.innerText = grandTotal
+                offerInputBtn.removeChild(enterCoupon);
+                offerInputBtn.removeChild(apply);
+
             } else {
                 alert('please enter a valid coupon code');
             }
