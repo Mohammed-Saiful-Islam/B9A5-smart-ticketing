@@ -43,7 +43,8 @@ for (const seat of allSeat) {
 
         const enterCoupon = document.getElementById('apply-input');
         const grand = document.getElementById('grand');
-        const apply = document.getElementById('apply-btn')
+        const apply = document.getElementById('apply-btn');
+        const offerInputBtn=document.getElementById('offer-input-btn');
 
         apply.addEventListener('click', function () {
             const offerPass = enterCoupon.value;
@@ -51,6 +52,8 @@ for (const seat of allSeat) {
                 const discount15 = totalPrice * 0.15;
                 const grandTotal = totalPrice - discount15;
                 grand.innerText = grandTotal;
+                offerInputBtn.removeChild(enterCoupon);
+                offerInputBtn.removeChild(apply);
 
             } else if (offerPass === 'Couple 20') {
                 const discount20 = totalPrice * 0.2;
