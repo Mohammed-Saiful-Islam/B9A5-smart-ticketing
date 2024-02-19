@@ -2,10 +2,10 @@ const allSeat = document.getElementsByClassName('seat');
 for (const seat of allSeat) {
     seat.addEventListener('click', function () {
 
-
         let count = 0;
         count = count + 1;
-
+        const nextBtn = document.getElementById('next');
+        nextBtn.removeAttribute('disabled');
         const available = document.getElementById('availabe');
         const selected = document.getElementById('selected');
         const seat = document.getElementById('seat');
@@ -44,7 +44,7 @@ for (const seat of allSeat) {
         const enterCoupon = document.getElementById('apply-input');
         const grand = document.getElementById('grand');
         const apply = document.getElementById('apply-btn');
-        const offerInputBtn=document.getElementById('offer-input-btn');
+        const offerInputBtn = document.getElementById('offer-input-btn');
 
         apply.addEventListener('click', function () {
             const offerPass = enterCoupon.value;
@@ -65,4 +65,16 @@ for (const seat of allSeat) {
         })
 
     })
+
 }
+const hdr = document.getElementById('hdr');
+const main = document.getElementById('main');
+const ftr = document.getElementById('ftr');
+const nextBtn = document.getElementById('next');
+const success = document.getElementById('success');
+nextBtn.addEventListener('click', function () {
+    hdr.classList.add('hidden');
+    main.classList.add('hidden');
+    ftr.classList.add('hidden');
+    success.classList.remove('hidden');
+})
