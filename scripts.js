@@ -40,7 +40,6 @@ for (const seat of allSeat) {
         li.classList.add('py-2');
         seatDeatails.appendChild(li);
 
-
         const total = document.getElementById('total');
         const totalPrice = parseInt(seat.innerText) * seatPrice;
         total.innerText = totalPrice;
@@ -51,7 +50,6 @@ for (const seat of allSeat) {
         const grand = document.getElementById('grand');
         const apply = document.getElementById('apply-btn');
         const offerInputBtn = document.getElementById('offer-input-btn');
-
         apply.addEventListener('click', function () {
             const offerPass = enterCoupon.value;
             if (offerPass === 'NEW15') {
@@ -72,9 +70,7 @@ for (const seat of allSeat) {
                 alert('please enter a valid coupon code');
             }
         })
-
     })
-
 }
 const hdr = document.getElementById('hdr');
 const main = document.getElementById('main');
