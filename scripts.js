@@ -19,8 +19,6 @@ for (const seat of allSeat) {
         const selectedSeat = parseInt(selected.innerText) + count;
         const finalSeat = parseInt(seat.innerText) + count;
 
-
-
         available.innerText = availableSeat;
         selected.innerText = selectedSeat;
         seat.innerText = finalSeat;
@@ -36,12 +34,16 @@ for (const seat of allSeat) {
         li.appendChild(p);
         li.appendChild(p2);
         li.appendChild(p3);
+        li.classList.add('flex');
+        li.classList.add('text-black');
+        li.classList.add('justify-between');
+        li.classList.add('py-2');
         seatDeatails.appendChild(li);
+
 
         const total = document.getElementById('total');
         const totalPrice = parseInt(seat.innerText) * seatPrice;
         total.innerText = totalPrice;
-
 
         //  NEW15 Couple 20
 
@@ -49,7 +51,6 @@ for (const seat of allSeat) {
         const grand = document.getElementById('grand');
         const apply = document.getElementById('apply-btn');
         const offerInputBtn = document.getElementById('offer-input-btn');
-
 
         apply.addEventListener('click', function () {
             const offerPass = enterCoupon.value;
