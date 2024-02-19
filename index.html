@@ -101,8 +101,9 @@
                     <p class="inter-font lg:text-xl font-normal text-white">Yes, you can run unit tests and view the
                         results directly within the app. The integrated testing features allow for a streamlined .</p>
                     <button
-                        class="btn btn-sm lg:btn-md bg-[#1DD100] text-black  raleway-font lg:text-xl font-bold hover:text-white">Buy
-                        Tickets</button>
+                        class="btn btn-sm lg:btn-md bg-[#1DD100] text-black  raleway-font lg:text-xl font-bold hover:text-white"><a
+                            href="#select-seat">Buy
+                            Tickets</a></button>
                 </div>
             </div>
             <div class="flex flex-row flex-wrap justify-center lg:gap-5 lg:-translate-y-[50%]">
@@ -245,16 +246,17 @@
             </div>
             <!-- route end -->
             <!-- seat start -->
-            <div
+            <div id="select-seat"
                 class=" max-w-[1171px] px-4 lg:px-0 mx-auto my-2 lg:my-12 lg:flex lg:gap-4 lg:divide-x-2 lg:divide-dashed">
                 <div class="lg:w-[60%] space-y-4 mb-4">
                     <h2 class="raleway-font text-[#030712] text-2xl font-semibold">Select Your Seat</h2>
                     <div class="flex justify-between border-t-2 border-b-2 border-dashed py-2">
                         <div class="flex gap-2 items-center"><img src="./images/seat-gray.png" alt="">
-                            <p class="inter-font text-[#03071280] text-xl font-medium"><span>40</span> Available</p>
+                            <p class="inter-font text-[#03071280] text-xl font-medium"><span id="availabe">40</span>
+                                Available</p>
                         </div>
                         <div class="flex gap-2 items-center"><img src="./images/seat-green-filled.png" alt="">
-                            <p class="inter-font text-xl font-medium"><span>0</span> Selected</p>
+                            <p class="inter-font text-xl font-medium"><span id="selected">0</span> Selected</p>
                         </div>
                     </div>
                     <div class="flex justify-end">
@@ -269,15 +271,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">A4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -286,15 +288,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">B4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -303,15 +305,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">C4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -320,15 +322,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">D4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -337,15 +339,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">E4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -354,15 +356,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">F4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -371,15 +373,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">G4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -388,15 +390,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">H4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -405,15 +407,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">I4</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-between">
@@ -422,15 +424,15 @@
                         </div>
                         <div class=" flex w-[38%] justify-between ">
                             <button
-                                class="lg:w-28 lg:h-14 btn-sm btn bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J1</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J1</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J2</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J2</button>
                         </div>
                         <div class=" flex w-[38%] justify-between">
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J3</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J3</button>
                             <button
-                                class="lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J4</button>
+                                class="seat lg:w-28 lg:h-14 btn btn-sm bg-[#03071219] border-none inter-font text-[#03071280] text-xl font-medium hover:text-white">J4</button>
                         </div>
                     </div>
                 </div>
@@ -442,9 +444,10 @@
                             <h2 class="raleway-font text-[#030712] text-2xl font-semibold">Select Your Seat</h2>
                         </div>
                         <div class="bg-[#03071219] mt-3 lg:mt-6  p-3 lg:p-6 space-y-6 rounded-lg">
-                            <div class="flex justify-between">
+                            <div id="detail" class="flex justify-between">
                                 <div>
-                                    <p class="inter-font text-[#030712] text-base font-medium">Seat <span>0</span></p>
+                                    <p class="inter-font text-[#030712] text-base font-medium">Seat <span
+                                            id="seat">0</span></p>
                                 </div>
                                 <div>
                                     <p class="inter-font text-[#030712] text-base font-medium">Class</p>
@@ -458,14 +461,15 @@
                                     <p class="inter-font text-[#030712] text-base font-medium">Total Price</p>
                                 </div>
                                 <div>
-                                    <P class="inter-font text-[#030712] text-base font-medium">BDT <span>0</span></P>
+                                    <P class="inter-font text-[#030712] text-base font-medium">BDT <span
+                                            id="total">0</span></P>
                                 </div>
                             </div>
                             <div class="flex items-center justify-center">
-                                <input type="text"
+                                <input id="apply-input-field" type="text"
                                     class="bg-white text-black lg:text-base lg:py-3 px-3 w-3/4 rounded-l-lg"
                                     placeholder="Have any coupon?">
-                                <button
+                                <button id="apply-btn"
                                     class="btn btn-sm lg:btn-md rounded-l-none bg-[#1DD100] lg:px-9 text-white inter-font text-base font-semibold border-none ">Apply</button>
                             </div>
                             <div class="flex justify-between">
@@ -473,7 +477,8 @@
                                     <p class="inter-font text-[#030712] text-base font-medium">Grand Total</p>
                                 </div>
                                 <div>
-                                    <p class="inter-font text-[#030712] text-base font-medium">BDT <span>0</span></p>
+                                    <p class="inter-font text-[#030712] text-base font-medium">BDT <span
+                                            id="grand">0</span></p>
                                 </div>
                             </div>
                         </div>
@@ -497,7 +502,8 @@
                                     placeholder="Enter your email id">
                             </div>
                             <div>
-                                <button class="btn w-full bg-[#1DD100] text-white raleway-font text-xl font-extrabold"
+                                <button id="next"
+                                    class="btn w-full bg-[#1DD100] text-white raleway-font text-xl font-extrabold"
                                     disabled>Next</button>
                             </div>
                             <div class="flex justify-around">
