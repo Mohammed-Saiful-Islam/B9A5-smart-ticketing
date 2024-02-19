@@ -1,15 +1,16 @@
 const allSeat = document.getElementsByClassName('seat');
-let available = document.getElementById('availabe');
-let count = 0;
 for (const seat of allSeat) {
-    seat.addEventListener('click', function (e) {
+    seat.addEventListener('click', function () {
+        let count = 0;
         count = count + 1;
+        let available = document.getElementById('availabe');
+        let selected = document.getElementById('selected');
         const availableSeat = parseInt(available.innerText) - count;
-        console.log(availableSeat);
+        console.log
+            ('availableSeat', availableSeat);
         const selectedSeat = parseInt(selected.innerText) + count;
-        console.log(selectedSeat);
+        console.log('selectedSeat', selectedSeat);
         available.innerText = availableSeat;
         selected.innerText = selectedSeat;
     })
-    
 }
